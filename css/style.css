@@ -1,0 +1,139 @@
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000000;
+
+}
+
+.navbar-dark .navbar-nav .active>.nav-link:hover{
+    opacity: .75;
+}
+
+.jumbotron{
+    padding-left: 0;
+    padding-top: 72px;
+}
+
+.jumbotron>.display-4{
+    margin: 0pt;
+    padding-left: 49px;
+    font-size: 72px;
+    transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: font-size 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+#my_text{
+    padding: 8px 0 0 55px;
+    transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: height 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #212529;
+}
+
+.jumbotron>.btn{
+    margin-left: 55px;
+    transition: margin-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+#my_card{
+    margin-bottom: 32px;
+    
+}
+
+#my_footer{
+    padding: 16px 16px 16px 40px;
+    transition: padding 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+#my_jumbo{
+    transition: padding-bottom 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+#my_container{
+    transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+@media screen and (max-width: 575px){
+   #my_jumbo{
+       padding-top: 32px;
+       padding-bottom: 48px;
+       transition: padding-top 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+   } 
+
+   #my_text{
+       padding-left: 31px;
+       transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+       transition: height 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+   }
+
+   .jumbotron>.btn{
+       margin-left: 31px;
+       transition: margin-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+       
+   }
+
+   #my_jumbo>.display-4{
+    padding-left: 30px;
+    transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    transition: font-size 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    line-height: 56px;  
+    color: #212529;
+    
+   }
+
+   #my_footer{
+    padding-left: 15px;
+    transition: padding-left 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+   }
+}
+
+/* добавить модальное (Диалоговое) окно */
